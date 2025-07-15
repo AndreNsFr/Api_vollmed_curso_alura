@@ -6,7 +6,6 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import med.voll.api.models.consulta.ConsultaCancelamento;
 import med.voll.api.models.consulta.DadosAgendamentoConsulta;
 import med.voll.api.models.consulta.MotivoCancelamento;
 import med.voll.api.repository.medico.Medico;
