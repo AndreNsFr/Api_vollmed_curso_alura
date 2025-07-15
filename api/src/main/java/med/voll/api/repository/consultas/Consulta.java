@@ -50,6 +50,8 @@ public class Consulta {
         this.medico.setId(Long.parseLong(consulta.medico()));
 
         this.dataHoraConsulta = consulta.dataHoraConsulta();
+
+        this.ativa = true;
     }
 
     public void cancelamentoConsulta(MotivoCancelamento motivoDoCancelamento){
