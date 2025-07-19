@@ -2,14 +2,12 @@ package med.voll.api.repository.paciente;
 
 
 import jakarta.persistence.*;
-import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import med.voll.api.models.paciente.DadosAtualizarPaciente;
 import med.voll.api.models.paciente.DadosCadastroPaciente;
-import med.voll.api.models.paciente.EnderecoPaciente;
 
 @Table(name = "pacientes")
 @Entity(name = "Paciente")
@@ -37,6 +35,7 @@ public class Paciente {
         this.telefone = dados.telefone();
         this.cpf = dados.cpf();
         this.endereco = new Endereco(dados.endereco());
+        this.ativo = true;
     }
 
     public void atualizarInformacoes( DadosAtualizarPaciente dados) {
