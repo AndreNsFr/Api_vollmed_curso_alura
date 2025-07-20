@@ -13,8 +13,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/medicos")
 public class MedicosController {
@@ -32,7 +30,6 @@ public class MedicosController {
 
     @GetMapping
     public Page<DadosListagemMedico> listar(Pageable paginacao){
-
         return repository.findAllByAtivoTrue(paginacao).map(DadosListagemMedico::new);
 
     }

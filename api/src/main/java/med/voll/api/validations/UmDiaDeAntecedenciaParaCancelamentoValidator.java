@@ -1,11 +1,9 @@
 package med.voll.api.validations;
 import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
-import med.voll.api.models.consulta.ConsultaCancelamento;
 import med.voll.api.repository.consultas.Consulta;
 import med.voll.api.repository.consultas.ConsultaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cglib.core.Local;
 
 import java.time.LocalDateTime;
 
