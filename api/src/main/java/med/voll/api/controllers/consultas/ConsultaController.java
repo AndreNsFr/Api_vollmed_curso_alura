@@ -1,4 +1,4 @@
-package med.voll.api.controller.consultas;
+package med.voll.api.controllers.consultas;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
@@ -7,9 +7,7 @@ import med.voll.api.models.consulta.DadosDetalhamentoConsulta;
 import med.voll.api.models.consulta.MotivoCancelamento;
 import med.voll.api.repository.consultas.Consulta;
 import med.voll.api.repository.consultas.ConsultaRepository;
-import med.voll.api.repository.medico.Medico;
 import med.voll.api.repository.medico.MedicoRepository;
-import med.voll.api.repository.paciente.Paciente;
 import med.voll.api.repository.paciente.PacienteRepository;
 import med.voll.api.validations.ConsultaExiste;
 import med.voll.api.validations.UmDiaDeAntecedenciaParaCancelamento;

@@ -1,11 +1,10 @@
-package med.voll.api.controller.pacientes;
+package med.voll.api.controllers.pacientes;
 
 import jakarta.validation.Valid;
 import med.voll.api.models.paciente.DadosAtualizarPaciente;
 import med.voll.api.models.paciente.DadosCadastroPaciente;
 import med.voll.api.models.paciente.DadosDetalhamentoPaciente;
 import med.voll.api.models.paciente.DadosListagemPacientes;
-import med.voll.api.repository.medico.Medico;
 import med.voll.api.repository.paciente.Paciente;
 import med.voll.api.repository.paciente.PacienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
